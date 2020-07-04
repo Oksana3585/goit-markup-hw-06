@@ -63,66 +63,65 @@
         </h1>
         <button data-modal-open class="button-primary1">Заказать услугу</button>
         
-       <div class="backdrop is-hidden" data-modal>
-         <div class="modal">
+    <div class="backdrop is-hidden" data-modal="">
+      <div class="modal">
+     
+     <form class="form">
+      <p class="form-caption">Оставьте свои данные, мы вам перезвоним</p>
+        <div class="input-container">
+
+      <!-- Имя -->
+        <label class="form-field">
+        <input class="form-input" type="text" type="text" name="name" placeholder=" " autofocus="">
+        <svg class="icon-span" width="12px" height="12px">
+          <use href='./images/sprites.svg#icon-name'></use>
+        </svg>
+        <span class="form-label">Имя</span>
+        </label>
+
+      <!-- Телефон -->
+        <label class="form-field">
+        <input class="form-input" type="tel" name="tel" placeholder=" " autofocus="">
+        <svg class="icon-span" width="15px" height="13">
+          <use href='./images/sprites.svg#icon-tel'></use>
+        </svg>
+        <span class="form-label">Телефон</span>
+        </label>
+                         
+      <!-- Почта -->
+        <label class="form-field">
+        <input class="form-input" type="email" name="email" placeholder=" " autocomplete="on">
+        <svg class="icon-span" width="15" height="12">
+          <use href='./images/sprites.svg#icon-mail'></use>
+        </svg>
+        <span class="form-label">Почта</span>
+        </label>
+
+      <!-- Комментарий -->
+        <label class="form-field">
+        <textarea class="form-input comment" name="comment" placeholder=" "></textarea>
+        <span class="form-comment">Комментарий</span>
+        </label>
+        </div>
+        <div class="checkbox-container">
+        <label class="form-field">
+        <input class="checkbox-input" type="checkbox" name="policy">
+        <span class="checkbox-text">Соглашаюсь с рассылкой и принимаю</span>
+        <span><a href="#">Условия договора</a></span>
+        <span class="icon-check"></span>
+        </label>
+        </div>
+        <button type="submit" class="btn-sumbit">Отправить</button>
+        </form>
 
         <button data-modal-close class="close-button">
-            <svg class="modal-icon" width="10" height="10">
-              <use href="./images/sprites.svg#icon-clozed"></use>
-            </svg>
+          <svg class="icon-close" width="11px" height="11px">
+            <use href='./images/sprites.svg#icon-clozed'></use>
+          </svg>
         </button>
-           
-           <form class="form" autocomplete="off">
-             <p class="form-paragraph">Оставьте свои данные, мы вам перезвоним</p>
-  
-        <div class="form-container">
-          <!--Имя-->
-            <label class="form-label" for="name">
-            <input class="form-input" type="text" name="name" id="name" placeholder=""/>
-            <svg class="icon-svg" widht="12" height="12">
-            <use href="./images/sprites.svg#icon-name"></use>
-            </svg>
-            <span class="form-span">Имя</span>
-            </label>
 
-            <!--Телефон-->
-            <label class="form-label" for="tel">
-            <input class="form-input" type="tel" name="tel" id="tel" placeholder="">
-            <svg class="icon-svg" widht="13" height="13">
-            <use href="./images/sprites.svg#icon-tel"></use>
-            </svg>
-            <span class="form-span">Телефон</span>
-            </label>
-
-            <!--Почта-->
-            <label class="form-label" for="mail">
-            <input class="form-input" type="email" name="mail" id="mail" placeholder="">
-            <svg class="icon-svg" widht="15" height="13">
-            <use href="./images/sprites.svg#icon-mail"></use>
-            </svg>
-            <span class="form-span">Почта</span>
-            </label>
-
-            <!--Комментарий-->
-            <label class="form-field">
-            <textarea class="form-input comment" name="comment" placeholder=""></textarea>
-            <span class="form-koment">Комментарий</span>
-            </label>
-            </div>
-             
-          <div class="form-agreement">
-            <label class="form-label">
-            <input class="checkbox-input" type="checkbox" name="policy" value="policy">
-            <span class="icon-text">Соглашаюсь с рассылкой и принимаю</span>
-            <span><a href="#">Условия договора</a></span>
-            <span class="icon-check"></span>
-            </label>
-          </div>
-
-            <button class="button-submit" type="sumbit">Отправить</button>
-            </form> 
-          </div>
-          </div>
+        </div>
+      </div>
       </section>
 
       <!--Преимущества-->
@@ -471,75 +470,76 @@
     </main>
 
   <!--Футер-->
-  <footer class="page-footer">
-    <div class="container footer">
-      <!--Логотип-->
-      <div class="address">
-        <a href="./index.html" class="logotip">
-          <span class="logotip-accent">Web</span>
-          <span class="logo-main">Studio</span>
-        </a>
-  
-        <address class="footer-contacts">
-          <p class="footer-addr">г. Киев, пр-т Леси Украинки, 26</p>
-          <!--Контакты-->
-          <p class="footer-mail">info@devstudio.com</p>
-          <p class="footer-number">38 099 111 11 11</p>
-        </address>
-      </div>
-  
-      <!--Cоиальные сети-->
-      <div class="join-in">
-        <h2 class="label">присоединяйтесь</h2>
-        <ul class="social-links list">
-          <li class="footer-socials">
-            <a href="https://www.instagram.com/" class="link" aria-label="Ссылка на Instagram">
-            <svg class="footer-icon">
-            <use href="./images/sprite.svg#icon-instagram"></use>
-            </svg>
-            </a>
-          </li>
-          <li class="footer-socials">
-            <a href="https://twitter.com/" class="link" aria-label="Ссылка на Twiter">
-            <svg class="footer-icon">
-              <use href="./images/sprite.svg#icon-twitter"></use>
-            </svg>
+    <footer class="page-footer">
+      <div class="container footer">
+        <!--Логотип-->
+        <div class="address">
+          <a href="./index.html" class="logotip">
+            <span class="logotip-accent">Web</span>
+            <span class="logo-main">Studio</span>
           </a>
-          </li>
-          <li class="footer-socials">
-            <a href="https://www.facebook.com/" class="link" aria-label="Cсылка на Facebook">
-            <svg class="footer-icon">
-              <use href="./images/sprite.svg#icon-facebbok"></use>
-            </svg>
-          </a>
-          </li>
-          <li class="footer-socials">
-            <a href="https://www.linkedin.com/" class="link" aria-label="Ссылка на LinkedIn">
-            <svg class="footer-icon">
-              <use href="./images/sprite.svg#icon-linkedin"></use>
-            </svg>
-          </a>
-          </li>
-        </ul>
-      </div>
-  
-      <div class="subscribe-mail">
-        <label class="label-mail" for="mail-form">подпишитесь на рассылку</label>
-      <div class="subscribe">
-          </label>
-          <div class="mail-form-wrap">
-        <input class="mail-form" type="email" name="email"
-        id="mail-form" placeholder="E-mail">
-        <button class="button-primary">Подписаться
-          <svg class="button-subscribe" width="24" height="24">
-            <use href="./images/sprite.svg#icon-icon-send"></use>
-          </svg>
-        </a>
+    
+          <address class="footer-contacts">
+            <p class="footer-addr">г. Киев, пр-т Леси Украинки, 26</p>
+            <!--Контакты-->
+            <p class="footer-mail">info@devstudio.com</p>
+            <p class="footer-number">38 099 111 11 11</p>
+          </address>
         </div>
-      </div>
-    </div>
-    <!-- <p class="copyright container">2020 | Developed by GoIT Students</p> -->
-  </footer>
+    
+        <!--Cоиальные сети-->
+        <div class="join-in">
+          <h2 class="label">присоединяйтесь</h2>
+          <ul class="social-links list">
+            <li class="footer-socials">
+              <a href="https://www.instagram.com/" class="link" aria-label="Ссылка на Instagram">
+                <svg class="footer-icon">
+                  <use href="./images/sprite.svg#icon-instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials">
+              <a href="https://twitter.com/" class="link" aria-label="Ссылка на Twiter">
+                <svg class="footer-icon">
+                  <use href="./images/sprite.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials">
+              <a href="https://www.facebook.com/" class="link" aria-label="Cсылка на Facebook">
+                <svg class="footer-icon">
+                  <use href="./images/sprite.svg#icon-facebbok"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-socials">
+              <a href="https://www.linkedin.com/" class="link" aria-label="Ссылка на LinkedIn">
+                <svg class="footer-icon">
+                  <use href="./images/sprite.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+    
+        <div class="subscribe-mail">
+          <form class="js-speaker-form">
+          <label class="label-mail" for="mail-form">подпишитесь на рассылку</label>
+          <div class="subscribe">
+            </label>
+            <div class="mail-form-wrap">
+              <input class="mail-form" type="email" name="email" id="mail-form" placeholder="E-mail">
+              <button class="button-primary">Подписаться
+                <svg class="button-subscribe" width="24" height="24">
+                  <use href="./images/sprite.svg#icon-icon-send"></use>
+                </svg>
+                </button>
+                </form>
+            </div>
+          </div>
+        </div>
+        <!-- <p class="copyright container">2020 | Developed by GoIT Students</p> -->
+    </footer>
   <script src="./js/modal.js"></script>
   </body>
 </html>
