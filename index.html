@@ -61,7 +61,68 @@
           эффективные решения <br />
           для вашего бизнеса
         </h1>
-        <a href="" class="button-primary1">Заказать услугу</a>
+        <button data-modal-open class="button-primary1">Заказать услугу</button>
+        
+       <div class="backdrop is-hidden" data-modal>
+         <div class="modal">
+
+        <button data-modal-close class="close-button">
+            <svg class="modal-icon" width="10" height="10">
+              <use href="./images/sprites.svg#icon-clozed"></use>
+            </svg>
+        </button>
+           
+           <form class="form" autocomplete="off">
+             <p class="form-paragraph">Оставьте свои данные, мы вам перезвоним</p>
+  
+        <div class="form-container">
+          <!--Имя-->
+            <label class="form-label" for="name">
+            <input class="form-input" type="text" name="name" id="name" placeholder=""/>
+            <svg class="icon-svg" widht="12" height="12">
+            <use href="./images/sprites.svg#icon-name"></use>
+            </svg>
+            <span class="form-span">Имя</span>
+            </label>
+
+            <!--Телефон-->
+            <label class="form-label" for="tel">
+            <input class="form-input" type="tel" name="tel" id="tel" placeholder="">
+            <svg class="icon-svg" widht="13" height="13">
+            <use href="./images/sprites.svg#icon-tel"></use>
+            </svg>
+            <span class="form-span">Телефон</span>
+            </label>
+
+            <!--Почта-->
+            <label class="form-label" for="mail">
+            <input class="form-input" type="email" name="mail" id="mail" placeholder="">
+            <svg class="icon-svg" widht="15" height="13">
+            <use href="./images/sprites.svg#icon-mail"></use>
+            </svg>
+            <span class="form-span">Почта</span>
+            </label>
+
+            <!--Комментарий-->
+            <label class="form-field">
+            <textarea class="form-input comment" name="comment" placeholder=""></textarea>
+            <span class="form-koment">Комментарий</span>
+            </label>
+            </div>
+             
+          <div class="form-agreement">
+            <label class="form-label">
+            <input class="checkbox-input" type="checkbox" name="policy" value="policy">
+            <span class="icon-text">Соглашаюсь с рассылкой и принимаю</span>
+            <span><a href="#">Условия договора</a></span>
+            <span class="icon-check"></span>
+            </label>
+          </div>
+
+            <button class="button-submit" type="sumbit">Отправить</button>
+            </form> 
+          </div>
+          </div>
       </section>
 
       <!--Преимущества-->
@@ -463,10 +524,13 @@
       </div>
   
       <div class="subscribe-mail">
-        <h2 class="label">подпишитесь на рассылку</h2>
-
+        <label class="label-mail" for="mail-form">подпишитесь на рассылку</label>
       <div class="subscribe">
-        <a class="button-primary">Подписаться
+          </label>
+          <div class="mail-form-wrap">
+        <input class="mail-form" type="email" name="email"
+        id="mail-form" placeholder="E-mail">
+        <button class="button-primary">Подписаться
           <svg class="button-subscribe" width="24" height="24">
             <use href="./images/sprite.svg#icon-icon-send"></use>
           </svg>
@@ -474,7 +538,8 @@
         </div>
       </div>
     </div>
-    <p class="copyright container">2020 | Developed by GoIT Students</p>
+    <!-- <p class="copyright container">2020 | Developed by GoIT Students</p> -->
   </footer>
+  <script src="./js/modal.js"></script>
   </body>
 </html>
